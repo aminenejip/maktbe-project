@@ -1,0 +1,107 @@
+{
+  "site": {
+    "name": "Librairie OLA",
+    "tagline": "Votre partenaire pour apprendre, grandir et réussir"
+  },
+  "nav": {
+    "home": "Accueil",
+    "books": "Livres",
+    "supplies": "Fournitures",
+    "services": "Services",
+    "about": "À propos",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Votre librairie scolaire",
+    "subtitle": "Livres, fournitures et ressources pour apprendre, grandir et réussir",
+    "cta_books": "Découvrir nos livres",
+    "cta_services": "Nos services"
+  },
+  "about": {
+    "badge": "Bienvenue chez Librairie OLA",
+    "title": "Plus qu'une librairie, un partenaire de votre réussite",
+    "description": "Depuis notre ouverture, nous nous engageons à offrir aux élèves, étudiants et enseignants les meilleurs outils pour leur parcours éducatif. Notre librairie est un espace chaleureux où chacun trouve non seulement ses livres et fournitures, mais aussi des conseils personnalisés.",
+    "advantages": {
+      "levels": { "title": "Pour tous les niveaux", "desc": "Du primaire à l'université" },
+      "quality": { "title": "Qualité sélectionnée", "desc": "Des produits choisis avec soin" },
+      "advice": { "title": "Conseils personnalisés", "desc": "Une équipe à votre écoute" }
+    }
+  },
+  "books": {
+    "title": "Œuvres et lectures recommandées",
+    "level_college": "Collège",
+    "level_lycee": "Lycée"
+  },
+  "services": {
+    "title": "Nos produits et services",
+    "items": {
+      "books": { "title": "Livres scolaires & parascolaires", "desc": "Manuels, romans, dictionnaires et bien plus" },
+      "supplies": { "title": "Fournitures scolaires", "desc": "Cahiers, stylos, classeurs, sacs et matériel" },
+      "stationery": { "title": "Papeterie & accessoires", "desc": "Papier cadeau, marque-pages, carnets et gadgets" },
+      "news": { "title": "Nouveautés & promotions", "desc": "Découvrez nos dernières arrivées et offres spéciales" }
+    }
+  },
+  "bundles": {
+    "title": "Contenu & accessoires",
+    "subtitle": "Nos packs essentiels : l'objet principal et ses accessoires complémentaires",
+    "view": "Voir le pack"
+  },
+  "contact_form": {
+    "title": "Envoyez-nous un message",
+    "subtitle": "Une question, une suggestion ? Écrivez-nous directement depuis cette page.",
+    "tab_email": "Email",
+    "tab_whatsapp": "WhatsApp",
+    "sender_name": "Votre nom",
+    "sender_phone": "Votre téléphone",
+    "sender_email": "Votre email",
+    "subject": "Objet du message",
+    "message": "Votre message",
+    "attachment": "Joindre un fichier",
+    "attachment_hint": "PDF, image, doc (max 10 Mo)",
+    "send": "Envoyer le message",
+    "sending": "Envoi en cours...",
+    "success": "Message envoyé ! Nous vous répondrons dans les plus brefs délais.",
+    "whatsapp_send": "Envoyer via WhatsApp",
+    "whatsapp_number": "Numéro WhatsApp",
+    "whatsapp_hint": "Vous serez redirigé vers WhatsApp pour finaliser l'envoi.",
+    "error": "Une erreur est survenue. Veuillez réessayer.",
+    "subjects": {
+      "info": "Demande d'information",
+      "order": "Commande & réservation",
+      "suggestion": "Suggestion de livre",
+      "complaint": "Réclamation",
+      "other": "Autre"
+    }
+  },
+  "newsletter": {
+    "title": "Restez informé",
+    "subtitle": "Recevez nos actualités, offres exclusives et recommandations de lecture directement dans votre boîte mail.",
+    "placeholder": "Votre adresse email",
+    "cta": "S'abonner à la newsletter",
+    "success": "Merci ! Vous êtes bien inscrit.",
+    "error": "Une erreur est survenue. Réessayez plus tard.",
+    "sending": "Envoi en cours..."
+  },
+  "promo": {
+    "title": "Inspirez-vous, apprenez, progressez !",
+    "desc": "Découvrez chaque semaine nos nouvelles sélections de livres et fournitures. Des recommandations personnalisées pour chaque niveau scolaire.",
+    "cta": "Voir toutes les nouveautés"
+  },
+  "footer": {
+    "description": "Votre partenaire pour apprendre, grandir et réussir",
+    "newsletter_title": "Recevez nos emails",
+    "newsletter_desc": "Inscrivez-vous pour recevoir nos nouveautés et promotions",
+    "newsletter_placeholder": "Votre adresse email",
+    "newsletter_cta": "S'inscrire",
+    "contact_title": "Contact",
+    "email": "contact@librairie-ola.com",
+    "whatsapp": "+212 6 00 00 00 00",
+    "facebook": "facebook.com/librairieola",
+    "instagram": "@librairieola",
+    "address": "123, Avenue de l'Éducation, Rabat",
+    "hours": "Lun-Ven: 9h-19h | Sam: 9h-13h",
+    "legal": "Mentions légales",
+    "privacy": "Politique de confidentialité",
+    "copyright": "© 2026 Librairie OLA. Tous droits réservés."
+  }
+}

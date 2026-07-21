@@ -1,0 +1,42 @@
+{
+  "site": {
+    "name": "Librairie OLA",
+    "name_en": "OLA Bookstore",
+    "tagline": "Votre partenaire pour apprendre, grandir et réussir",
+    "tagline_en": "Your partner to learn, grow and succeed"
+  },
+  "hero": {
+    "title": "Votre librairie scolaire",
+    "title_en": "Your school bookstore",
+    "subtitle": "Livres, fournitures et ressources pour apprendre, grandir et réussir",
+    "subtitle_en": "Books, supplies and resources to learn, grow and succeed"
+  },
+  "about": {
+    "badge": "Bienvenue chez Librairie OLA",
+    "badge_en": "Welcome to OLA Bookstore",
+    "title": "Plus qu'une librairie, un partenaire de votre réussite",
+    "title_en": "More than a bookstore, a partner in your success",
+    "description": "Depuis notre ouverture, nous nous engageons à offrir aux élèves, étudiants et enseignants les meilleurs outils pour leur parcours éducatif. Notre librairie est un espace chaleureux où chacun trouve non seulement ses livres et fournitures, mais aussi des conseils personnalisés.",
+    "description_en": "Since our opening, we are committed to providing students, teachers and educators with the best tools for their educational journey. Our bookstore is a welcoming space where everyone finds not only books and supplies but also personalized advice."
+  },
+  "promo": {
+    "title": "Inspirez-vous, apprenez, progressez !",
+    "title_en": "Get inspired, learn, progress!",
+    "desc": "Découvrez chaque semaine nos nouvelles sélections de livres et fournitures. Des recommandations personnalisées pour chaque niveau scolaire.",
+    "desc_en": "Discover our new selections of books and supplies every week. Personalized recommendations for every grade level.",
+    "cta": "Voir toutes les nouveautés",
+    "cta_en": "See all new arrivals"
+  },
+  "footer": {
+    "description": "Votre partenaire pour apprendre, grandir et réussir",
+    "description_en": "Your partner to learn, grow and succeed",
+    "email": "contact@librairie-ola.com",
+    "whatsapp": "+212 6 00 00 00 00",
+    "facebook": "facebook.com/librairieola",
+    "instagram": "@librairieola",
+    "address": "123, Avenue de l'Éducation, Rabat",
+    "address_en": "123, Education Avenue, Rabat",
+    "hours": "Lun-Ven: 9h-19h | Sam: 9h-13h",
+    "hours_en": "Mon-Fri: 9am-7pm | Sat: 9am-1pm"
+  }
+}

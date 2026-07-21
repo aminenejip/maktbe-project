@@ -1,0 +1,20 @@
+{
+  "email": {
+    "enabled": false,
+    "smtp_host": "smtp.gmail.com",
+    "smtp_port": 587,
+    "smtp_user": "",
+    "smtp_pass": "",
+    "from_name": "Librairie OLA",
+    "from_email": "contact@librairie-ola.com",
+    "to_email": "admin@librairie-ola.com"
+  },
+  "whatsapp": {
+    "enabled": false,
+    "api_type": "cloud_api",
+    "phone_number_id": "",
+    "business_account_id": "",
+    "api_token": "",
+    "from_phone": "212600000000"
+  }
+}
