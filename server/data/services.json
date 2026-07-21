@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Livres scolaires & parascolaires",
+    "name_en": "School & extracurricular books",
+    "description": "Manuels, romans, dictionnaires et bien plus pour tous les niveaux scolaires.",
+    "description_en": "Textbooks, novels, dictionaries and more for all grade levels.",
+    "description_detailed": "Nous proposons un large choix de livres scolaires pour tous les niveaux : primaire, collège, lycée et université. Notre sélection inclut les manuels officiels, des romans classiques et contemporains, des dictionnaires, des encyclopédies et des ouvrages de référence. Chaque année, nous renouvelons notre stock pour suivre les programmes officiels.",
+    "description_detailed_en": "We offer a wide selection of school books for all levels: primary, middle school, high school and university. Our selection includes official textbooks, classic and contemporary novels, dictionaries, encyclopedias and reference works. Every year we renew our stock to follow the official curriculum.",
+    "image": "",
+    "images": [],
+    "external_link": "",
+    "coordonnees": [],
+    "order": 1,
+    "active": true
+  },
+  {
+    "id": 2,
+    "name": "Fournitures scolaires",
+    "name_en": "School supplies",
+    "description": "Cahiers, stylos, classeurs, sacs et matériel pour la rentrée scolaire.",
+    "description_en": "Notebooks, pens, binders, bags and back-to-school equipment.",
+    "description_detailed": "Tout le nécessaire pour la rentrée scolaire : cahiers grands et petits formats, stylos, crayons, gommes, règles, classeurs, sacs à dos, trousses et bien plus. Nous travaillons avec les plus grandes marques pour garantir qualité et durabilité.",
+    "description_detailed_en": "Everything you need for the school year: notebooks in all sizes, pens, pencils, erasers, rulers, binders, backpacks, pencil cases and more. We work with the biggest brands to guarantee quality and durability.",
+    "image": "",
+    "images": [],
+    "external_link": "",
+    "coordonnees": [],
+    "order": 2,
+    "active": true
+  },
+  {
+    "id": 3,
+    "name": "Papeterie & accessoires",
+    "name_en": "Stationery & accessories",
+    "description": "Papier cadeau, marque-pages, carnets et gadgets pour tous les goûts.",
+    "description_en": "Gift wrap, bookmarks, notebooks and gadgets for every taste.",
+    "description_detailed": "Découvrez notre gamme de papeterie fine : carnets en cuir, stylos plume, papier cadeau, cartes de vœux, marque-pages artisanaux et accessoires de bureau design. Le cadeau idéal pour les amoureux de l'écriture et du papier.",
+    "description_detailed_en": "Discover our range of fine stationery: leather notebooks, fountain pens, gift wrap, greeting cards, handmade bookmarks and designer office accessories. The perfect gift for lovers of writing and paper.",
+    "image": "",
+    "images": [],
+    "external_link": "",
+    "coordonnees": [],
+    "order": 3,
+    "active": true
+  },
+  {
+    "id": 4,
+    "name": "Nouveautés & promotions",
+    "name_en": "New arrivals & promotions",
+    "description": "Découvrez nos dernières arrivées et offres spéciales.",
+    "description_en": "Discover our latest arrivals and special offers.",
+    "description_detailed": "Restez à l'affût de nos dernières nouveautés et offres promotionnelles. Chaque mois, nous mettons en avant une sélection de produits à prix réduits. Inscrivez-vous pour être informé des prochaines promotions exclusives.",
+    "description_detailed_en": "Keep up to date with our latest arrivals and promotional offers. Every month we feature a selection of products at reduced prices. Sign up to be informed of upcoming exclusive promotions.",
+    "image": "",
+    "images": [],
+    "external_link": "",
+    "coordonnees": [],
+    "order": 4,
+    "active": true
+  }
+]

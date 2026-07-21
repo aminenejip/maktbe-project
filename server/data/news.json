@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Rentrée scolaire 2026-2027",
+    "title_en": "Back to School 2026-2027",
+    "description": "Préparez votre rentrée avec nos offres spéciales sur les manuels scolaires et fournitures. -20% sur tous les packs.",
+    "description_en": "Prepare for the new school year with our special offers on textbooks and supplies. 20% off all packs.",
+    "description_detailed": "La rentrée scolaire 2026-2027 arrive à grands pas ! Nous avons préparé des offres exceptionnelles pour vous accompagner. Profitez de -20% sur tous nos packs de fournitures et manuels jusqu'au 30 septembre. Nouveauté cette année : un service de commande en ligne avec retrait en magasin sous 2 heures. Venez découvrir nos nouvelles collections et bénéficiez des conseils de notre équipe.",
+    "description_detailed_en": "The 2026-2027 school year is just around the corner! We have prepared exceptional offers to support you. Enjoy 20% off all our supply and textbook packs until September 30. New this year: an online ordering service with in-store pickup within 2 hours. Come discover our new collections and benefit from our team's advice.",
+    "image": "",
+    "images": [],
+    "external_link": "",
+    "createdAt": "2026-09-01T08:00:00.000Z",
+    "published": true
+  },
+  {
+    "id": 2,
+    "title": "Nouveauté : Ateliers de lecture",
+    "title_en": "New: Reading Workshops",
+    "description": "Rejoignez nos ateliers de lecture gratuits tous les mercredis après-midi. Ouvert à tous les niveaux.",
+    "description_en": "Join our free reading workshops every Wednesday afternoon. Open to all levels.",
+    "description_detailed": "Nous lançons des ateliers de lecture gratuits pour enfants et adultes ! Chaque mercredi de 14h à 16h, nos animateurs vous feront découvrir des œuvres sélectionnées avec soin. Les ateliers sont adaptés par tranche d'âge : 6-8 ans, 9-12 ans, adolescents et adultes. Un goûter est offert à chaque participant. Inscription recommandée car les places sont limitées.",
+    "description_detailed_en": "We are launching free reading workshops for children and adults! Every Wednesday from 2pm to 4pm, our facilitators will introduce you to carefully selected works. The workshops are adapted by age group: 6-8 years, 9-12 years, teenagers and adults. Snacks are provided for each participant. Registration recommended as places are limited.",
+    "image": "",
+    "images": [],
+    "external_link": "",
+    "createdAt": "2026-08-15T10:00:00.000Z",
+    "published": true
+  },
+  {
+    "id": 3,
+    "title": "Concours de dictée inter-écoles",
+    "title_en": "Inter-school Spelling Bee Contest",
+    "description": "Inscrivez votre classe au concours annuel de dictée. Lots à gagner pour les trois premiers.",
+    "description_en": "Register your class for the annual spelling bee contest. Prizes for the top three.",
+    "description_detailed": "La grande finale du concours de dictée inter-écoles aura lieu le 15 décembre dans notre librairie. Les inscriptions sont ouvertes jusqu'au 30 novembre. Catégories : collège et lycée. Les gagnants recevront des lots comprenant des livres, des fournitures et des bons d'achat. Les enseignants intéressés peuvent contacter notre équipe pour inscrire leurs classes.",
+    "description_detailed_en": "The grand final of the inter-school spelling bee contest will take place on December 15 at our bookstore. Registration is open until November 30. Categories: middle school and high school. Winners will receive prizes including books, supplies and gift vouchers. Interested teachers can contact our team to register their classes.",
+    "image": "",
+    "images": [],
+    "external_link": "",
+    "createdAt": "2026-07-20T14:00:00.000Z",
+    "published": true
+  }
+]

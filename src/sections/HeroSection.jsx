@@ -35,7 +35,7 @@ export default function HeroSection() {
 
             <div className="flex flex-wrap gap-4 pt-2 animate-fade-up stagger-4">
               <a
-                href="#books"
+                href="#services"
                 className="px-7 py-3 bg-ink text-white text-sm font-semibold rounded-lg hover:bg-ink-light shadow-sm hover:shadow-md transition-all duration-300"
               >
                 {t('hero.cta_books')}

@@ -1,13 +1,22 @@
-import { createContext, useContext, useState, useCallback } from 'react'
+import { createContext, useContext, useState, useCallback, useEffect } from 'react'
 import fr from '../locales/fr.json'
 import en from '../locales/en.json'
+import ar from '../locales/ar.json'
 
-const translations = { fr, en }
+const translations = { fr, en, ar }
 
 const LanguageContext = createContext()
 
 export function LanguageProvider({ children }) {
-  const [lang, setLang] = useState('fr')
+  const [lang, setLang] = useState(() => {
+    return sessionStorage.getItem('app_lang') || 'fr'
+  })
+
+  useEffect(() => {
+    sessionStorage.setItem('app_lang', lang)
+    document.documentElement.lang = lang
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr'
+  }, [lang])
 
   const t = useCallback(
     (path) => {
@@ -21,12 +30,12 @@ export function LanguageProvider({ children }) {
     [lang]
   )
 
-  const toggleLang = useCallback(() => {
-    setLang((prev) => (prev === 'fr' ? 'en' : 'fr'))
+  const setLanguage = useCallback((newLang) => {
+    if (translations[newLang]) setLang(newLang)
   }, [])
 
   return (
-    <LanguageContext.Provider value={{ lang, t, toggleLang }}>
+    <LanguageContext.Provider value={{ lang, t, setLanguage }}>
       {children}
     </LanguageContext.Provider>
   )

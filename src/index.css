@@ -43,6 +43,14 @@
     background-color: var(--color-terracotta);
     color: white;
   }
+
+  [dir="rtl"] {
+    text-align: right;
+  }
+
+  [dir="rtl"] .ltr-only {
+    text-align: left;
+  }
 }
 
 @keyframes fade-up {
@@ -93,6 +101,17 @@
   to { clip-path: inset(0 0 0 0); }
 }
 
+@keyframes modal-fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 .animate-fade-up {
   animation: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
@@ -115,6 +134,10 @@
 
 .animate-reveal {
   animation: reveal-mask 0.8s cubic-bezier(0.77, 0, 0.18, 1) forwards;
+}
+
+.animate-modal {
+  animation: modal-fade-in 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .stagger-1 { animation-delay: 0.1s; }

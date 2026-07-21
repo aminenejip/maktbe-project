@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "type": "phone",
+    "label": "Téléphone",
+    "label_en": "Phone",
+    "value": "+212 6 00 00 00 00",
+    "icon": "phone",
+    "order": 1,
+    "active": true
+  },
+  {
+    "id": 2,
+    "type": "whatsapp",
+    "label": "WhatsApp",
+    "label_en": "WhatsApp",
+    "value": "+21697976003",
+    "icon": "whatsapp",
+    "order": 2,
+    "active": true
+  },
+  {
+    "id": 3,
+    "type": "email",
+    "label": "Email",
+    "label_en": "Email",
+    "value": "librairieola2@gmail.com",
+    "icon": "email",
+    "order": 3,
+    "active": true
+  },
+  {
+    "id": 4,
+    "type": "facebook",
+    "label": "Facebook",
+    "label_en": "Facebook",
+    "value": "https://facebook.com/librairieola",
+    "icon": "facebook",
+    "order": 4,
+    "active": true
+  },
+  {
+    "id": 5,
+    "type": "instagram",
+    "label": "Instagram",
+    "label_en": "Instagram",
+    "value": "https://instagram.com/librairieola",
+    "icon": "instagram",
+    "order": 5,
+    "active": true
+  }
+]

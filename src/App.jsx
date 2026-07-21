@@ -1,33 +1,29 @@
 import { Routes, Route } from 'react-router-dom'
-import { LanguageProvider } from './hooks/useTranslation'
+import { LanguageProvider, useTranslation } from './hooks/useTranslation'
 import Header from './components/Header'
 import HeroSection from './sections/HeroSection'
 import AboutSection from './sections/AboutSection'
-import BooksSection from './sections/BooksSection'
 import ServicesSection from './sections/ServicesSection'
-import BundlesSection from './sections/BundlesSection'
-import PromoSection from './sections/PromoSection'
-import NewsletterSection from './sections/NewsletterSection'
+import NewsSection from './sections/NewsSection'
 import ContactSection from './sections/ContactSection'
 import Footer from './components/Footer'
-import Admin from './admin/Admin'
 
 function HomePage() {
+  const { lang } = useTranslation()
+
   return (
-    <>
+    <div className={lang === 'ar' ? 'rtl' : 'ltr'}>
       <Header />
       <main>
         <HeroSection />
         <AboutSection />
-        <BooksSection />
+        <NewsSection />
         <ServicesSection />
-        <BundlesSection />
-        <PromoSection />
-        <NewsletterSection />
+        
         <ContactSection />
       </main>
       <Footer />
-    </>
+    </div>
   )
 }
 
@@ -37,7 +33,6 @@ export default function App() {
       <div className="min-h-screen">
         <Routes>
           <Route path="/*" element={<HomePage />} />
-          <Route path="/admin/*" element={<Admin />} />
         </Routes>
       </div>
     </LanguageProvider>

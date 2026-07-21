@@ -5,16 +5,15 @@
   },
   "nav": {
     "home": "Home",
-    "books": "Books",
-    "supplies": "Supplies",
     "services": "Services",
+    "news": "News",
     "about": "About",
     "contact": "Contact"
   },
   "hero": {
     "title": "Your school bookstore",
     "subtitle": "Books, supplies and resources to learn, grow and succeed",
-    "cta_books": "Discover our books",
+    "cta_books": "Discover our services",
     "cta_services": "Our services"
   },
   "about": {
@@ -27,79 +26,39 @@
       "advice": { "title": "Personalized advice", "desc": "A team ready to help you" }
     }
   },
-  "books": {
-    "title": "Recommended books & readings",
-    "level_college": "Middle School",
-    "level_lycee": "High School"
+  "news": {
+    "title": "News & Updates",
+    "read_more": "Read more",
+    "no_image": "No image",
+    "published_on": "Published on",
+    "no_news": "No news at the moment"
   },
   "services": {
-    "title": "Our products & services",
-    "items": {
-      "books": { "title": "School & extracurricular books", "desc": "Textbooks, novels, dictionaries and more" },
-      "supplies": { "title": "School supplies", "desc": "Notebooks, pens, binders, bags and equipment" },
-      "stationery": { "title": "Stationery & accessories", "desc": "Gift wrap, bookmarks, notebooks and gadgets" },
-      "news": { "title": "New arrivals & promotions", "desc": "Discover our latest arrivals and special offers" }
-    }
+    "title": "Services",
+    "details_title": "Service details",
+    "contact": "Contact",
+    "close": "Close"
   },
-  "bundles": {
-    "title": "Content & accessories",
-    "subtitle": "Our essential packs: the main item with its complementary accessories",
-    "view": "View the pack"
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Reach us through any of our channels",
+    "call_now": "Call now",
+    "send_email": "Send an email",
+    "open_chat": "Open WhatsApp",
+    "visit": "Visit"
   },
-  "contact_form": {
-    "title": "Send us a message",
-    "subtitle": "A question or suggestion? Write to us directly from this page.",
-    "tab_email": "Email",
-    "tab_whatsapp": "WhatsApp",
-    "sender_name": "Your name",
-    "sender_phone": "Your phone",
-    "sender_email": "Your email",
-    "subject": "Message subject",
-    "message": "Your message",
-    "attachment": "Attach a file",
-    "attachment_hint": "PDF, image, doc (max 10 MB)",
-    "send": "Send message",
-    "sending": "Sending...",
-    "success": "Message sent! We will get back to you as soon as possible.",
-    "whatsapp_send": "Send via WhatsApp",
-    "whatsapp_number": "WhatsApp number",
-    "whatsapp_hint": "You will be redirected to WhatsApp to complete the send.",
-    "error": "An error occurred. Please try again.",
-    "subjects": {
-      "info": "Information request",
-      "order": "Order & reservation",
-      "suggestion": "Book suggestion",
-      "complaint": "Complaint",
-      "other": "Other"
-    }
-  },
-  "newsletter": {
-    "title": "Stay informed",
-    "subtitle": "Receive our news, exclusive offers and reading recommendations directly in your inbox.",
-    "placeholder": "Your email address",
-    "cta": "Subscribe to newsletter",
-    "success": "Thank you! You are now subscribed.",
-    "error": "An error occurred. Please try again later.",
-    "sending": "Sending..."
-  },
-  "promo": {
-    "title": "Get inspired, learn, progress!",
-    "desc": "Discover our new selections of books and supplies every week. Personalized recommendations for every grade level.",
-    "cta": "See all new arrivals"
+  "coordonnees": {
+    "title": "Contact info",
+    "phone": "Phone",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "other": "Other"
   },
   "footer": {
     "description": "Your partner to learn, grow and succeed",
-    "newsletter_title": "Get our emails",
-    "newsletter_desc": "Subscribe to receive our latest news and promotions",
-    "newsletter_placeholder": "Your email address",
-    "newsletter_cta": "Subscribe",
     "contact_title": "Contact",
-    "email": "contact@ola-bookstore.com",
-    "whatsapp": "+212 6 00 00 00 00",
-    "facebook": "facebook.com/olabookstore",
-    "instagram": "@olabookstore",
-    "address": "123, Education Avenue, Rabat",
-    "hours": "Mon-Fri: 9am-7pm | Sat: 9am-1pm",
     "legal": "Legal notice",
     "privacy": "Privacy policy",
     "copyright": "© 2026 OLA Bookstore. All rights reserved."
