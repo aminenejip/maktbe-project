@@ -1,8 +1,7 @@
 {
+  "rootDirectory": "backend",
   "build": {
-    "builder": "NIXPACKS",
-    "buildCommand": "",
-    "rootDirectory": "backend"
+    "builder": "NIXPACKS"
   },
   "deploy": {
     "startCommand": "node src/index.js",
