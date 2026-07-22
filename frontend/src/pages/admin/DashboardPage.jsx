@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { api } from '../../api/client'
 
 export default function DashboardPage() {
   const [stats, setStats] = useState({ services: 0, news: 0, contacts: 0 })
@@ -8,9 +9,9 @@ export default function DashboardPage() {
     const token = localStorage.getItem('admin_token')
     const headers = { Authorization: `Bearer ${token}` }
     Promise.all([
-      fetch('/api/admin/services', { headers }).then((r) => r.json()).catch(() => []),
-      fetch('/api/admin/news', { headers }).then((r) => r.json()).catch(() => []),
-      fetch('/api/coordonnees').then((r) => r.json()).catch(() => []),
+      api('/api/admin/services', { headers }).then((r) => r.json()).catch(() => []),
+      api('/api/admin/news', { headers }).then((r) => r.json()).catch(() => []),
+      api('/api/coordonnees').then((r) => r.json()).catch(() => []),
     ]).then(([services, news, contacts]) => {
       setStats({
         services: services.length,

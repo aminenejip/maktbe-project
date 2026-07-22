@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { api } from '../../api/client'
 
 export default function ChangePasswordPage() {
   const [currentPassword, setCurrentPassword] = useState('')
@@ -23,7 +24,7 @@ export default function ChangePasswordPage() {
     setLoading(true)
     try {
       const token = localStorage.getItem('admin_token')
-      const res = await fetch('/api/admin/change-password', {
+      const res = await api('/api/admin/change-password', {
         method: 'POST',
         headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
         body: JSON.stringify({ currentPassword, newPassword }),

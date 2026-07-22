@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { api } from '../../api/client'
 
 const emptyForm = {
   title: '', title_en: '', title_ar: '',
@@ -19,7 +20,7 @@ export default function NewsPage() {
   const headers = { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' }
 
   const load = () => {
-    fetch('/api/admin/news', { headers })
+    api('/api/admin/news', { headers })
       .then((r) => r.json())
       .then(setItems)
       .catch(() => {})
@@ -32,7 +33,7 @@ export default function NewsPage() {
     const url = editingId ? `/api/admin/news/${editingId}` : '/api/admin/news'
     const method = editingId ? 'PUT' : 'POST'
     const payload = { ...form, createdAt: form.createdAt ? new Date(form.createdAt).toISOString() : new Date().toISOString() }
-    await fetch(url, { method, headers, body: JSON.stringify(payload) })
+    await api(url, { method, headers, body: JSON.stringify(payload) })
     setForm(emptyForm)
     setEditingId(null)
     setShowForm(false)
@@ -47,7 +48,7 @@ export default function NewsPage() {
 
   const handleDelete = async (id) => {
     if (!confirm('Supprimer cette actualite ?')) return
-    await fetch(`/api/admin/news/${id}`, { method: 'DELETE', headers })
+    await api(`/api/admin/news/${id}`, { method: 'DELETE', headers })
     load()
   }
 

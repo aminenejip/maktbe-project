@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { api } from '../../api/client'
 
 const TYPE_OPTIONS = [
   { value: 'phone', label: 'Telephone' },
@@ -21,7 +22,7 @@ export default function CoordonneesPage() {
   const headers = { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' }
 
   const load = () => {
-    fetch('/api/admin/coordonnees', { headers })
+    api('/api/admin/coordonnees', { headers })
       .then((r) => r.json())
       .then(setItems)
       .catch(() => {})
@@ -34,7 +35,7 @@ export default function CoordonneesPage() {
     const url = editingId ? `/api/admin/coordonnees/${editingId}` : '/api/admin/coordonnees'
     const method = editingId ? 'PUT' : 'POST'
 
-    await fetch(url, { method, headers, body: JSON.stringify(form) })
+    await api(url, { method, headers, body: JSON.stringify(form) })
     setForm(emptyForm)
     setEditingId(null)
     setShowForm(false)
@@ -49,7 +50,7 @@ export default function CoordonneesPage() {
 
   const handleDelete = async (id) => {
     if (!confirm('Supprimer cette coordonnee ?')) return
-    await fetch(`/api/admin/coordonnees/${id}`, { method: 'DELETE', headers })
+    await api(`/api/admin/coordonnees/${id}`, { method: 'DELETE', headers })
     load()
   }
 

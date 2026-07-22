@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Navigate, useNavigate } from 'react-router-dom'
+import { api } from '../../api/client'
 
 export default function PrivateRoute({ children }) {
   const navigate = useNavigate()
@@ -12,7 +13,7 @@ export default function PrivateRoute({ children }) {
   }
 
   useEffect(() => {
-    fetch('/api/admin/verify', {
+    api('/api/admin/verify', {
       headers: { Authorization: `Bearer ${token}` },
     }).then((r) => {
       if (r.ok) {

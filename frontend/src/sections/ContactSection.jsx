@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react'
 import { useTranslation } from '../hooks/useTranslation'
 import { getContactHref, getContactIcon } from '../api/contact'
+import { api } from '../api/client'
 
 export default function ContactSection() {
   const { t } = useTranslation()
   const [coordonnees, setCoordonnees] = useState([])
 
   useEffect(() => {
-    fetch('/api/coordonnees')
+    api('/api/coordonnees')
       .then((r) => r.json())
       .then((data) => setCoordonnees(data.filter((c) => c.active !== false).sort((a, b) => a.order - b.order)))
       .catch(() => {})

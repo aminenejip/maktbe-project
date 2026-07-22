@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { useTranslation } from '../hooks/useTranslation'
 import ServiceCard from '../components/ui/ServiceCard'
 import ServiceModal from '../components/ui/ServiceModal'
+import { api } from '../api/client'
 
 export default function ServicesSection() {
   const { t } = useTranslation()
@@ -9,7 +10,7 @@ export default function ServicesSection() {
   const [selected, setSelected] = useState(null)
 
   useEffect(() => {
-    fetch('/api/services')
+    api('/api/services')
       .then((r) => r.json())
       .then(setServices)
       .catch(() => {})

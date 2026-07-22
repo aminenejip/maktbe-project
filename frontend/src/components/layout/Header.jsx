@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { useTranslation } from '../../hooks/useTranslation'
 import LanguageSwitcher from '../common/LanguageSwitcher'
 import { getContactHref, getContactIcon } from '../../api/contact'
+import { api } from '../../api/client'
 
 const navKeys = ['home', 'services', 'news', 'about', 'contact']
 
@@ -20,7 +21,7 @@ export default function Header() {
   }, [])
 
   useEffect(() => {
-    fetch('/api/coordonnees')
+    api('/api/coordonnees')
       .then((r) => r.json())
       .then((data) => setCoordonnees(data.filter((c) => c.active !== false).sort((a, b) => a.order - b.order)))
       .catch(() => {})

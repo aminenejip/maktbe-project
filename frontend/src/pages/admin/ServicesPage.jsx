@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { api } from '../../api/client'
 
 const emptyForm = {
   name: '', name_en: '', name_ar: '',
@@ -18,7 +19,7 @@ export default function ServicesPage() {
   const headers = { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' }
 
   const load = () => {
-    fetch('/api/admin/services', { headers })
+    api('/api/admin/services', { headers })
       .then((r) => r.json())
       .then(setItems)
       .catch(() => {})
@@ -30,7 +31,7 @@ export default function ServicesPage() {
     e.preventDefault()
     const url = editingId ? `/api/admin/services/${editingId}` : '/api/admin/services'
     const method = editingId ? 'PUT' : 'POST'
-    await fetch(url, { method, headers, body: JSON.stringify(form) })
+    await api(url, { method, headers, body: JSON.stringify(form) })
     setForm(emptyForm)
     setEditingId(null)
     setShowForm(false)
@@ -45,7 +46,7 @@ export default function ServicesPage() {
 
   const handleDelete = async (id) => {
     if (!confirm('Supprimer ce service ?')) return
-    await fetch(`/api/admin/services/${id}`, { method: 'DELETE', headers })
+    await api(`/api/admin/services/${id}`, { method: 'DELETE', headers })
     load()
   }
 

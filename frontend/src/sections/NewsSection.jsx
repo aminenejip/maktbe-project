@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useTranslation } from '../hooks/useTranslation'
+import { api } from '../api/client'
 
 const fallbackIcon = (
   <svg className="w-10 h-10 text-stone-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
@@ -13,7 +14,7 @@ export default function NewsSection() {
   const [expanded, setExpanded] = useState({})
 
   useEffect(() => {
-    fetch('/api/news')
+    api('/api/news')
       .then((r) => r.json())
       .then(setNews)
       .catch(() => {})
