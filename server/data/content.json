@@ -16,6 +16,7 @@
     "subtitle_ar": "كتب، لوازم وموارد للتعلم والنمو والنجاح"
   },
   "about": {
+    "image": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=600&h=500&fit=crop",
     "badge": "Bienvenue chez Librairie OLA",
     "badge_en": "Welcome to OLA Bookstore",
     "badge_ar": "مرحبًا بكم في مكتبة OLA",
@@ -24,7 +25,40 @@
     "title_ar": "أكثر من مكتبة، شريك نجاحك",
     "description": "Depuis notre ouverture, nous nous engageons à offrir aux élèves, étudiants et enseignants les meilleurs outils pour leur parcours éducatif. Notre librairie est un espace chaleureux où chacun trouve non seulement ses livres et fournitures, mais aussi des conseils personnalisés.",
     "description_en": "Since our opening, we are committed to providing students, teachers and educators with the best tools for their educational journey. Our bookstore is a welcoming space where everyone finds not only books and supplies but also personalized advice.",
-    "description_ar": "منذ افتتاحنا، نلتزم بتوفير أفضل الأدوات للطلاب والمعلمين في مسارهم التعليمي. مكتبتنا هي فضاء دافئ يجد فيه الجميع ليس فقط كتبهم ولوازمهم ولكن أيضًا نصائح مخصصة."
+    "description_ar": "منذ افتتاحنا، نلتزم بتوفير أفضل الأدوات للطلاب والمعلمين في مسارهم التعليمي. مكتبتنا هي فضاء دافئ يجد فيه الجميع ليس فقط كتبهم ولوازمهم ولكن أيضًا نصائح مخصصة.",
+    "expertise_number": "12+",
+    "expertise_label": "années d'expertise",
+    "expertise_label_en": "years of expertise",
+    "expertise_label_ar": "سنوات من الخبرة",
+    "advantages": [
+      {
+        "key": "levels",
+        "title": "Pour tous les niveaux",
+        "title_en": "For all levels",
+        "title_ar": "لجميع المستويات",
+        "desc": "Du primaire à l'université",
+        "desc_en": "From primary to university",
+        "desc_ar": "من الابتدائي إلى الجامعة"
+      },
+      {
+        "key": "quality",
+        "title": "Qualité sélectionnée",
+        "title_en": "Selected quality",
+        "title_ar": "جودة مختارة",
+        "desc": "Des produits choisis avec soin",
+        "desc_en": "Carefully selected products",
+        "desc_ar": "منتجات مختارة بعناية"
+      },
+      {
+        "key": "advice",
+        "title": "Conseils personnalisés",
+        "title_en": "Personalized advice",
+        "title_ar": "نصائح مخصصة",
+        "desc": "Une équipe à votre écoute",
+        "desc_en": "A team at your service",
+        "desc_ar": "فريق في خدمتك"
+      }
+    ]
   },
   "footer": {
     "description": "Votre partenaire pour apprendre, grandir et réussir",

@@ -7,6 +7,8 @@ import ServicesSection from './sections/ServicesSection'
 import NewsSection from './sections/NewsSection'
 import ContactSection from './sections/ContactSection'
 import Footer from './components/Footer'
+import AdminApp from './AdminApp'
+import LoginPage from './pages/admin/LoginPage'
 
 function HomePage() {
   const { lang } = useTranslation()
@@ -19,7 +21,6 @@ function HomePage() {
         <AboutSection />
         <NewsSection />
         <ServicesSection />
-        
         <ContactSection />
       </main>
       <Footer />
@@ -29,12 +30,19 @@ function HomePage() {
 
 export default function App() {
   return (
-    <LanguageProvider>
-      <div className="min-h-screen">
-        <Routes>
-          <Route path="/*" element={<HomePage />} />
-        </Routes>
-      </div>
-    </LanguageProvider>
+    <Routes>
+      <Route path="/admin/login" element={<LoginPage />} />
+      <Route path="/admin/*" element={<AdminApp />} />
+      <Route
+        path="/*"
+        element={
+          <LanguageProvider>
+            <div className="min-h-screen">
+              <HomePage />
+            </div>
+          </LanguageProvider>
+        }
+      />
+    </Routes>
   )
 }

@@ -4,7 +4,7 @@
     "type": "phone",
     "label": "Téléphone",
     "label_en": "Phone",
-    "value": "+212 6 00 00 00 00",
+    "value": "+216 97976003",
     "icon": "phone",
     "order": 1,
     "active": true
@@ -27,26 +27,6 @@
     "value": "librairieola2@gmail.com",
     "icon": "email",
     "order": 3,
-    "active": true
-  },
-  {
-    "id": 4,
-    "type": "facebook",
-    "label": "Facebook",
-    "label_en": "Facebook",
-    "value": "https://facebook.com/librairieola",
-    "icon": "facebook",
-    "order": 4,
-    "active": true
-  },
-  {
-    "id": 5,
-    "type": "instagram",
-    "label": "Instagram",
-    "label_en": "Instagram",
-    "value": "https://instagram.com/librairieola",
-    "icon": "instagram",
-    "order": 5,
     "active": true
   }
 ]
