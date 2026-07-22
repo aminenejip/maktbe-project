@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Routes, Route, Link, useLocation, useNavigate } from 'react-router-dom'
 import DashboardPage from './pages/admin/DashboardPage'
 import CoordonneesPage from './pages/admin/CoordonneesPage'
-import AboutPage from './pages/admin/AboutPage'
+
 import NewsPage from './pages/admin/NewsPage'
 import ServicesPage from './pages/admin/ServicesPage'
 import ChangePasswordPage from './pages/admin/ChangePasswordPage'
@@ -10,7 +10,7 @@ import ChangePasswordPage from './pages/admin/ChangePasswordPage'
 const navItems = [
   { path: '/admin', label: 'Tableau de bord', icon: 'M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6', exact: true },
   { path: '/admin/coordonnees', label: 'Coordonnees', icon: 'M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z' },
-  { path: '/admin/about', label: 'A propos', icon: 'M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z' },
+
   { path: '/admin/news', label: 'Actualites', icon: 'M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z' },
   { path: '/admin/services', label: 'Services', icon: 'M11.42 15.17l-5.1 3.06 5.1 3.06m0-6.12l5.1 3.06-5.1 3.06m0-6.12L6.33 9m5.1 3.06L16.77 9' },
   { path: '/admin/change-password', label: 'Mot de passe', icon: 'M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z' },
@@ -133,7 +133,7 @@ export default function AdminApp() {
             <Routes>
               <Route index element={<DashboardPage />} />
               <Route path="coordonnees" element={<CoordonneesPage />} />
-              <Route path="about" element={<AboutPage />} />
+
               <Route path="news" element={<NewsPage />} />
               <Route path="services" element={<ServicesPage />} />
               <Route path="change-password" element={<ChangePasswordPage />} />

@@ -96,15 +96,7 @@ export default function ServiceCard({ service, onClick }) {
             {expanded ? 'Réduire' : t('news.read_more')}
           </button>
         )}
-        <button
-          onClick={onClick}
-          className="w-9 h-9 rounded-full bg-ink text-white flex items-center justify-center hover:bg-terracotta transition-all duration-300 hover:scale-110 cursor-pointer ml-auto"
-          title={t('services.contact')}
-        >
-          <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-          </svg>
-        </button>
+
       </div>
     </div>
   )

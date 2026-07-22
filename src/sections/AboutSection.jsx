@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react'
 import { useTranslation } from '../hooks/useTranslation'
+
+const advantages = ['levels', 'quality', 'advice']
 
 const advantageIcons = {
   levels: (
@@ -20,18 +21,7 @@ const advantageIcons = {
 }
 
 export default function AboutSection() {
-  const { t, lang } = useTranslation()
-  const [content, setContent] = useState(null)
-
-  useEffect(() => {
-    fetch('/api/content')
-      .then((r) => r.json())
-      .then((data) => setContent(data.content?.about || null))
-      .catch(() => {})
-  }, [])
-
-  const about = content || {}
-  const advantages = about.advantages || []
+  const { t } = useTranslation()
 
   return (
     <section id="about" className="py-20 md:py-28 bg-sand-light">
@@ -40,7 +30,7 @@ export default function AboutSection() {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-lg">
               <img
-                src={about.image || "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=600&h=500&fit=crop"}
+                src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=600&h=500&fit=crop"
                 alt="Library"
                 className="w-full h-[440px] object-cover"
                 loading="lazy"
@@ -50,36 +40,28 @@ export default function AboutSection() {
             <div className="absolute -bottom-5 -right-5 w-28 h-28 rounded-xl bg-terracotta/10 -z-10" />
             <div className="absolute -top-5 -left-5 w-24 h-24 rounded-xl bg-gold/10 -z-10" />
             <div className="absolute bottom-6 left-6 bg-ivory/95 backdrop-blur-sm rounded-xl px-5 py-3 shadow-lg">
-              <span className="font-['Playfair_Display'] text-3xl font-bold text-terracotta">{about.expertise_number || '12+'}</span>
-              <span className="text-xs text-stone block mt-0.5">
-                {lang === 'ar' && about.expertise_label_ar ? about.expertise_label_ar : lang === 'en' && about.expertise_label_en ? about.expertise_label_en : about.expertise_label || "ann\u00e9es d'expertise"}
-              </span>
+              <span className="font-['Playfair_Display'] text-3xl font-bold text-terracotta">12+</span>
+              <span className="text-xs text-stone block mt-0.5">années d'expertise</span>
             </div>
           </div>
 
           <div className="flex flex-col gap-5">
             <span className="text-xs font-semibold text-terracotta bg-terracotta-light px-4 py-1.5 rounded-full self-start tracking-wider uppercase">
-              {lang === 'ar' && about.badge_ar ? about.badge_ar : lang === 'en' && about.badge_en ? about.badge_en : about.badge || t('about.badge')}
+              {t('about.badge')}
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-ink leading-[1.12]">
-              {lang === 'ar' && about.title_ar ? about.title_ar : lang === 'en' && about.title_en ? about.title_en : about.title || t('about.title')}
+              {t('about.title')}
             </h2>
-            <p className="text-stone leading-relaxed">
-              {lang === 'ar' && about.description_ar ? about.description_ar : lang === 'en' && about.description_en ? about.description_en : about.description || t('about.description')}
-            </p>
+            <p className="text-stone leading-relaxed">{t('about.description')}</p>
             <div className="flex flex-col gap-5 mt-2">
-              {advantages.map((adv) => (
-                <div key={adv.key} className="flex items-start gap-4">
+              {advantages.map((key) => (
+                <div key={key} className="flex items-start gap-4">
                   <div className="w-11 h-11 rounded-xl bg-ink flex items-center justify-center shrink-0 text-sand-light">
-                    {advantageIcons[adv.key] || advantageIcons.levels}
+                    {advantageIcons[key]}
                   </div>
                   <div>
-                    <h4 className="font-['DM_Sans'] font-bold text-ink">
-                      {lang === 'ar' && adv.title_ar ? adv.title_ar : lang === 'en' && adv.title_en ? adv.title_en : adv.title}
-                    </h4>
-                    <p className="text-sm text-stone">
-                      {lang === 'ar' && adv.desc_ar ? adv.desc_ar : lang === 'en' && adv.desc_en ? adv.desc_en : adv.desc}
-                    </p>
+                    <h4 className="font-['DM_Sans'] font-bold text-ink">{t(`about.advantages.${key}.title`)}</h4>
+                    <p className="text-sm text-stone">{t(`about.advantages.${key}.desc`)}</p>
                   </div>
                 </div>
               ))}

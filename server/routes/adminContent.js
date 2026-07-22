@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import fs from 'fs/promises'
+import fsp from 'fs/promises'
 import path from 'path'
 import { fileURLToPath } from 'url'
 import { authMiddleware } from './adminAuth.js'
@@ -8,15 +8,13 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const router = Router()
 
 const readJSON = (file) =>
-  fs.readFile(path.join(__dirname, '..', 'data', file), 'utf-8').then(JSON.parse)
+  fsp.readFile(path.join(__dirname, '..', 'data', file), 'utf-8').then(JSON.parse)
 
 const writeJSON = (file, data) =>
-  fs.writeFile(path.join(__dirname, '..', 'data', file), JSON.stringify(data, null, 2), 'utf-8')
-
-router.use('/admin', authMiddleware)
+  fsp.writeFile(path.join(__dirname, '..', 'data', file), JSON.stringify(data, null, 2), 'utf-8')
 
 function crudRoutes(basePath, dataFile) {
-  router.get(`/admin/${basePath}`, async (req, res) => {
+  router.get(`/admin/${basePath}`, authMiddleware, async (req, res) => {
     try {
       const data = await readJSON(dataFile)
       res.json(data)
@@ -25,7 +23,7 @@ function crudRoutes(basePath, dataFile) {
     }
   })
 
-  router.post(`/admin/${basePath}`, async (req, res) => {
+  router.post(`/admin/${basePath}`, authMiddleware, async (req, res) => {
     try {
       const data = await readJSON(dataFile)
       const maxId = data.reduce((max, item) => Math.max(max, item.id || 0), 0)
@@ -38,7 +36,7 @@ function crudRoutes(basePath, dataFile) {
     }
   })
 
-  router.put(`/admin/${basePath}/:id`, async (req, res) => {
+  router.put(`/admin/${basePath}/:id`, authMiddleware, async (req, res) => {
     try {
       const data = await readJSON(dataFile)
       const index = data.findIndex((item) => item.id === Number(req.params.id))
@@ -51,7 +49,7 @@ function crudRoutes(basePath, dataFile) {
     }
   })
 
-  router.delete(`/admin/${basePath}/:id`, async (req, res) => {
+  router.delete(`/admin/${basePath}/:id`, authMiddleware, async (req, res) => {
     try {
       const data = await readJSON(dataFile)
       const index = data.findIndex((item) => item.id === Number(req.params.id))
@@ -68,25 +66,5 @@ function crudRoutes(basePath, dataFile) {
 crudRoutes('coordonnees', 'coordonnees.json')
 crudRoutes('news', 'news.json')
 crudRoutes('services', 'services.json')
-
-router.get('/admin/content', async (req, res) => {
-  try {
-    const content = await readJSON('content.json')
-    res.json(content)
-  } catch {
-    res.status(500).json({ error: 'Erreur de lecture' })
-  }
-})
-
-router.put('/admin/content', async (req, res) => {
-  try {
-    const content = await readJSON('content.json')
-    const updated = { ...content, ...req.body }
-    await writeJSON('content.json', updated)
-    res.json(updated)
-  } catch {
-    res.status(500).json({ error: 'Erreur lors de la modification' })
-  }
-})
 
 export default router
