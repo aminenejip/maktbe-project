@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "build": "echo 'No build step required - this is a Node.js backend'",
     "start": "node src/index.js",
     "dev": "node src/index.js"
   },
